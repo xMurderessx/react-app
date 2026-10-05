@@ -10,7 +10,7 @@
     <div id="root"></div>
     <script type="module">
       // Si Pages está configurado para servir la rama, usa el respaldo compilado.
-      if (location.hostname.endsWith('github.io') && !import.meta.env.PROD) {
+      if (location.hostname.endsWith('github.io') && !import.meta.env?.PROD) {
         location.replace('./dist/')
       }
     </script>
